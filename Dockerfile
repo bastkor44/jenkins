@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD ["gunicorn", "--bind", "0.0.0.0:8002", "hello_django.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "hello_django.wsgi:application"]
